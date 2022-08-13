@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 html {
@@ -19,4 +19,9 @@ body {
       top/50% no-repeat,
     url("../../assets/backgrounds/bg-pattern-bottom-desktop.svg") right
       bottom/50% no-repeat;
+}
+
+main {
+  max-width: 1110px;
+  margin: 0 auto;
 }
