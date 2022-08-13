@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.rating-card {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 3.1rem;
+  background-color: $magenta-light;
+  border-radius: 0.7rem;
+  &__stars-container {
+    margin-right: 2rem;
+    > img {
+      width: 1.8rem;
+      &:not(:last-child) {
+        margin-right: 0.7rem;
+      }
+    }
+  }
+  &__text {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: $magenta-darker;
+  }
+}
