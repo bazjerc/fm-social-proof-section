@@ -1,0 +1,14 @@
+{
+  "name": "social-proof-section",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.54.4"
+  },
+  "scripts": {
+    "sassw": "sass --watch ./sass/style.scss:./css/style.css --no-source-map"
+  },
+  "author": "",
+  "license": "ISC"
+}
