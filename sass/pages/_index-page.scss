@@ -3,10 +3,12 @@
 .overview {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8rem;
   &__summary {
+    flex-shrink: 0;
   }
   &__heading {
-    width: 12ch;
+    max-width: 12ch;
     font-size: 5.6rem;
     letter-spacing: -0.2rem;
     font-weight: 400;
@@ -15,7 +17,7 @@
     margin-bottom: 3rem;
   }
   &__paragraph {
-    width: 40ch;
+    max-width: 40ch;
     font-size: 1.9rem;
     color: $magenta-dark;
     font-weight: 400;
@@ -25,10 +27,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-basis: 53.5rem;
   }
   &__rating-wrapper {
+    &:nth-child(1) {
+      align-self: flex-start;
+    }
+    &:nth-child(2) {
+      align-self: center;
+    }
+    &:nth-child(3) {
+      align-self: flex-end;
+    }
     &:not(:last-child) {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+.reviews {
+  display: flex;
+  &__review-wrapper {
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+    &:nth-child(1) {
+      align-self: flex-start;
+      margin-bottom: 3.2rem;
+    }
+    &:nth-child(2) {
+      align-self: center;
+    }
+    &:nth-child(3) {
+      align-self: flex-end;
     }
   }
 }
