@@ -47,13 +47,13 @@
 
 .reviews {
   display: flex;
+  min-height: 28rem;
   &__review-wrapper {
     &:not(:last-child) {
       margin-right: 3rem;
     }
     &:nth-child(1) {
       align-self: flex-start;
-      margin-bottom: 3.2rem;
     }
     &:nth-child(2) {
       align-self: center;
