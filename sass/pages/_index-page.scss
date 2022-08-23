@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 8rem;
-  @include media-max(1010px) {
+  @include media-max(1035px) {
     flex-direction: column;
     margin-bottom: 5rem;
   }
@@ -15,11 +15,11 @@
     max-width: 12ch;
     font-size: 5.6rem;
     letter-spacing: -0.2rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 84%;
     color: $magenta-darker;
     margin-bottom: 3rem;
-    @include media-max(1010px) {
+    @include media-max(1035px) {
       text-align: center;
       max-width: 16ch;
       margin: 0 auto;
@@ -33,10 +33,11 @@
     max-width: 40ch;
     font-size: 2rem;
     color: $magenta-dark;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -0.06rem;
-    @include media-max(1010px) {
-      max-width: 55ch;
+    line-height: 1.3;
+    @include media-max(1035px) {
+      max-width: 50ch;
       margin: 0 auto;
       text-align: center;
     }
@@ -52,7 +53,7 @@
     @include media-max(1100px) {
       align-items: flex-end;
     }
-    @include media-max(1010px) {
+    @include media-max(1035px) {
       flex-basis: initial;
       margin-top: 3rem;
       align-items: center;
@@ -64,7 +65,7 @@
 
   // rating-card component
   .rating-card {
-    @include media-max(1010px) {
+    @include media-max(1035px) {
       min-width: 40rem;
       flex-direction: column;
       padding-top: 1.6rem;
@@ -96,15 +97,10 @@
       }
     }
     &__stars-container {
-      @include media-max(1010px) {
+      @include media-max(1035px) {
         margin-right: 0;
         margin-bottom: 1.3rem;
       }
-    }
-    &__text {
-      font-size: 1.7rem;
-      font-weight: 400;
-      color: $magenta-darker;
     }
   }
 }
@@ -112,14 +108,14 @@
 .reviews {
   display: flex;
   align-items: flex-start;
-  @include media-max(1010px) {
+  @include media-max(1035px) {
     flex-direction: column;
     align-items: center;
   }
 
   // review-card component
   .review-card {
-    @include media-max(1010px) {
+    @include media-max(1035px) {
       max-width: 40rem;
     }
     @include media-max(592px) {
@@ -128,20 +124,20 @@
     }
     &:not(:last-child) {
       margin-right: 3rem;
-      @include media-max(1010px) {
+      @include media-max(1035px) {
         margin-right: 0;
         margin-bottom: 3rem;
       }
     }
     &:nth-child(2) {
       margin-top: 1.5rem;
-      @include media-max(1010px) {
+      @include media-max(1035px) {
         margin-top: 0;
       }
     }
     &:nth-child(3) {
       margin-top: 3rem;
-      @include media-max(1010px) {
+      @include media-max(1035px) {
         margin-top: 0;
       }
     }

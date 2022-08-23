@@ -24,12 +24,13 @@
     font-size: 1.7rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   &__buyer-status {
     color: $pink-soft;
   }
   &__text {
     font-size: 1.7rem;
+    line-height: 1.3;
   }
 }
