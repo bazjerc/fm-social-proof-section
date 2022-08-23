@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 8rem;
+  @include media-max(1010px) {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
   &__summary {
     flex-shrink: 0;
   }
@@ -15,34 +19,92 @@
     line-height: 84%;
     color: $magenta-darker;
     margin-bottom: 3rem;
+    @include media-max(1010px) {
+      text-align: center;
+      max-width: 16ch;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+    @include media-max(592px) {
+      max-width: 11ch;
+    }
   }
   &__paragraph {
     max-width: 40ch;
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: $magenta-dark;
     font-weight: 400;
     letter-spacing: -0.06rem;
+    @include media-max(1010px) {
+      max-width: 55ch;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @include media-max(592px) {
+      max-width: 32ch;
+    }
   }
   &__ratings {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: 53.5rem;
+    @include media-max(1100px) {
+      align-items: flex-end;
+    }
+    @include media-max(1010px) {
+      flex-basis: initial;
+      margin-top: 3rem;
+      align-items: center;
+    }
+    @include media-max(592px) {
+      margin-top: 2rem;
+    }
   }
 
   // rating-card component
   .rating-card {
+    @include media-max(1010px) {
+      min-width: 40rem;
+      flex-direction: column;
+      padding-top: 1.6rem;
+      padding-bottom: 1rem;
+    }
+    @include media-max(592px) {
+      width: 100%;
+      min-width: initial;
+    }
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
     &:nth-child(1) {
       align-self: flex-start;
+      @include media-max(1100px) {
+        align-self: initial;
+      }
     }
     &:nth-child(2) {
       align-self: center;
+      @include media-max(1100px) {
+        align-self: initial;
+      }
     }
     &:nth-child(3) {
       align-self: flex-end;
+      @include media-max(1100px) {
+        align-self: initial;
+      }
+    }
+    &__stars-container {
+      @include media-max(1010px) {
+        margin-right: 0;
+        margin-bottom: 1.3rem;
+      }
+    }
+    &__text {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: $magenta-darker;
     }
   }
 }
@@ -50,17 +112,38 @@
 .reviews {
   display: flex;
   align-items: flex-start;
-  
+  @include media-max(1010px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   // review-card component
   .review-card {
+    @include media-max(1010px) {
+      max-width: 40rem;
+    }
+    @include media-max(592px) {
+      width: 100%;
+      max-width: initial;
+    }
     &:not(:last-child) {
       margin-right: 3rem;
+      @include media-max(1010px) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
     }
     &:nth-child(2) {
       margin-top: 1.5rem;
+      @include media-max(1010px) {
+        margin-top: 0;
+      }
     }
     &:nth-child(3) {
       margin-top: 3rem;
+      @include media-max(1010px) {
+        margin-top: 0;
+      }
     }
   }
 }
