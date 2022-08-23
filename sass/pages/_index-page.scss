@@ -29,7 +29,12 @@
     justify-content: center;
     flex-basis: 53.5rem;
   }
-  &__rating-wrapper {
+
+  // rating-card component
+  .rating-card {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
     &:nth-child(1) {
       align-self: flex-start;
     }
@@ -38,28 +43,24 @@
     }
     &:nth-child(3) {
       align-self: flex-end;
-    }
-    &:not(:last-child) {
-      margin-bottom: 2rem;
     }
   }
 }
 
 .reviews {
   display: flex;
-  min-height: 28rem;
-  &__review-wrapper {
+  align-items: flex-start;
+  
+  // review-card component
+  .review-card {
     &:not(:last-child) {
       margin-right: 3rem;
     }
-    &:nth-child(1) {
-      align-self: flex-start;
-    }
     &:nth-child(2) {
-      align-self: center;
+      margin-top: 1.5rem;
     }
     &:nth-child(3) {
-      align-self: flex-end;
+      margin-top: 3rem;
     }
   }
 }
